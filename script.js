@@ -1,22 +1,8 @@
-const boxes = document.querySelectorAll('.box')
+const labels = document.querySelectorAll('.form-control label')
 
-window.addEventListener('scroll', checkBoxes)
-
-checkBoxes()
-
-function checkBoxes() {
-	const triggerBottom = window.innerHeight / 5 * 4
-
-
-	boxes.forEach(box => {
-		const boxTop = box.getBoundingClientRect().top
-
-
-		if(boxTop < triggerBottom) {
-			box.classList.add('show')
-
-		} else{
-			box.classList.remove('show')
-		}
-	})
-}
+labels.forEach(label => {
+	label.innerHTML = label.innerText
+		.split('')
+		.map((letter, idx) => `<span style="transition-delay:${idx * 50}ms">${letter}</span>`)
+		.join('')
+})
