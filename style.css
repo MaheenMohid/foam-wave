@@ -1,116 +1,84 @@
-@import url('http://fonts.googleapis.com/css?family=Muli&display=swap');
-
-
 *{
 	box-sizing: border-box;
 }
 
-body{
-	background: steelblue;
-	color: #fff;
-	font-family:  'Muli', sans-serif;
+body {
+	background: lightslategray;
+	font-family: sans-serif;
 	display: flex;
 	flex-direction: column;
+	margin: 0;
+	align-items:center ;
+	justify-content: center;
+	overflow-x: hidden;
+
+}
+h1{
+	margin: 10px;
+	color: #fff;
+
+}
+
+.box{
+	color: #fff;
+	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: 0;
-	overflow: hidden;
-	height: 100vh;
+	width: 400px;
+	height: 200px;
+	margin: 10px;
+	border-radius: 10px;
+	box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3) ;
+	transform: translateX(200%);
+	transition: transform 0.4s ease;
+	;
 }
 
-
-.container{
-	background-color: rgba(0, 0, 0, 0.4);
-	padding: 20px 40px;
-	border-radius: 5px;
-
+.box:nth-of-type(even) {
+	transform: translateX(-200%);
 }
 
-
-.container h1{
-	text-align: center;
-	margin-bottom: 30px;
+.box.show{
+	transform: translateX(0);
 }
 
-
-.container a{
-	text-decoration: none;
-	color: lightblue;
+.box h2{
+	font-size: 45px;
 }
 
-.form-control{
-	position: relative;
-	margin: 20px 0 40px;
-	width: 300px;
-
+#a{
+	background-color:red ;
 }
-
-.form-control input{
-	background-color: transparent;
-	border: 0;
-	border-bottom: 2px #fff solid;
-	display: block;
-	width: 100%;
-	padding: 15px 0;
-	font-size: 18px;
-	color: #fff;
+#b{
+	background-color: yellow;
 }
-
-
-
-
-.btn{
-	cursor: pointer;
-	display: inline-block;
-	width: 100%;
-	background: lightblue;
-	padding: 15px;
-	font-family: inherit;
-	font-size: 16px;
-	border: 0;
-	border-radius: 5px;
+#c{
+	background-color:green ;
 }
-
-.btn:focus{
-	outline: 0;
-
+#d{
+	background-color:blue ;
 }
-
-.btn:active{
-	transform: scale(0.98);
+#e{
+	background-color: orange ;
 }
-
-
-.text{
-	margin-top: 30px;
-
+#f{
+	background-color: purple;
 }
-
-.form-control input:focus, .form-control input:valid{
-	outline: 0;
-	border-bottom-color:lightblue ;
+#g{
+	background-color: violet;
 }
-
-.form-control label {
-	position: absolute;
-	top: 15px;
-	left: 0;
-
+#h{
+	background-color: hotpink;
 }
-
-
-
-.form-control input:focus + label span,
-.form-control input:valid + label span {
-	color: lightblue;
-	transform: translateY(-30px);
-
+#i{
+	background-color: turquoise;
 }
-
-.form-control label span {
-	display: inline-block;
-	font-size: 18px;
-	min-width: 5px;
-	transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-	
+#j{
+	background-color: silver;
+}
+#k{
+	background-color: coral;
+}
+#l{
+	background-color: gold;
 }
